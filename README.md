@@ -1,15 +1,11 @@
 # ReactNativeClass
+
 跟着欧神一起学 **React Native**
-- 环境搭建
+
+- 「React Native 入门」之环境搭建
   - Mac
   - Windows
-- 项目结构
-  - 了解各个文件和文件夹的作用
-- 动手编写
-  - JSX 语法
-  - 如何插入图片
-  - 基本布局练习
-- UI 组件
-  - 如何创建
+- [「React Native 入门」之项目结构](./ReactNative入门之项目结构.md)
+- 「React Native 入门」布局练习
 
 

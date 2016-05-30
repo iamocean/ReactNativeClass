@@ -1,4 +1,4 @@
-# 「React Native 入门」项目结构
+# 「React Native 入门」之项目结构
 
 每当我们要开始一个新项目时，总是会先输入 `react-native init 项目名`，然后就会生成一堆文件和文件夹，那它们分别是做什么用的呢？
 
@@ -46,9 +46,11 @@
 
 下面我们来看看 `index.ios.js` 和 `index.android.js` 这两个文件，除了文件名不同外，文件里面的内容是一模一样的。
 
+
+
 下面我们来拆分成几块一起了解下
 
- ####  引入与声明
+#### 引入与声明
 
 ```
 import React, {
@@ -67,7 +69,7 @@ import React, {
 下面我换种方式**（ES 5）**的
 
 ```
-var React = require('react-native
+var React = require('react-native');
 var AppRegistry = React.AppRegistry;
 var Component = React.Component;
 var StyleSheet = React.StyleSheet;
@@ -102,9 +104,7 @@ class ReactNativeClass extends Component {
 
 创建一个类（组件），继承 **Component** 。
 
-**render** 方法就是用于渲染视图
-
-**return** 后面的代码就是 **JSX** 模块语法
+**render** 方法就是用于渲染视图，**return** 后面的代码就是 **JSX** 语法。
 
 
 

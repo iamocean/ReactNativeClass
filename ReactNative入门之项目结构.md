@@ -66,7 +66,7 @@ import React, {
 
 这里直接使用了 **ES 6** 的语法，可能大家看着有点陌生。
 
-下面我换种方式**（ES 5）**的
+下面我换种写法**（ES 5）**的
 
 ```
 var React = require('react-native');
@@ -76,11 +76,11 @@ var StyleSheet = React.StyleSheet;
 ……
 ```
 
-这种应该可以看得懂了吧，以前接触过 **Node.js** 的同学，估计更加清楚了。
+这种应该可以看得懂了吧，以前接触过 **Node.js** 的同学，估计就更加清楚了。
 
 
 
-#### Component 组件
+#### 创建组件
 
 ```
 class ReactNativeClass extends Component {
@@ -108,7 +108,7 @@ class ReactNativeClass extends Component {
 
 
 
-#### 样式
+#### 定义样式
 
 ```
 const styles = StyleSheet.create({

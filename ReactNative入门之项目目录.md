@@ -1,4 +1,4 @@
-# 「React Native 入门」之项目结构
+# 「React Native 入门」之项目目录
 
 每当我们要开始一个新项目时，总是会先输入 `react-native init 项目名`，然后就会生成一堆文件和文件夹，那它们分别是做什么用的呢？
 
@@ -16,9 +16,9 @@
 
 
 
-## 项目结构
+## 项目目录
 
-进入 `ReactNativeClass` 文件夹，然后通过 `tree` 命令来查看项目结构，如下:
+进入 `ReactNativeClass` 文件夹，然后通过 `tree` 命令来查看当前项目的目录结构，如下:
 
 ```javascript
 ~/Dropbox/Study/react-native/ReactNativeClass   
@@ -53,30 +53,22 @@
 #### 引入与声明
 
 ```
-import React, {
+import React, { Component } from 'react';
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   View
 } from 'react-native';
 ```
 
-这段代码可以理解为引入 **react native** 模块，并声明定义需要用到的组件。
+第一个 *import* 的意思是引入 **React** 核心模块，并声明定义需要用到的组件。这里的 **React** 跟 **WEB** 版的 **React** 用的是同一个库 **react.js**
 
-这里直接使用了 **ES 6** 的语法，可能大家看着有点陌生。
+第二个 *import* 的意思是引入 **React Native**  （移动终端 iOS/Android）核心模块，并声明定义需要用到的组件。
 
-下面我换种写法**（ES 5）**的
+假如你是用 **React** 在开发 **WEB** 网站， 那么第二个 **import** 就应该是用 **react-dom** 模块，由于是在开发 **APP**，所以理所当然就应该引入 **react-native** 。
 
-```
-var React = require('react-native');
-var AppRegistry = React.AppRegistry;
-var Component = React.Component;
-var StyleSheet = React.StyleSheet;
-……
-```
-
-这种应该可以看得懂了吧，以前接触过 **Node.js** 的同学，估计就更加清楚了。
+*注： React Native 从 ``0.18`` 开始，统一使用 `ES6` 作为默认语法， 到了 `0.25`  后又将其拆分成  React 和 React Native，主要是简化代码编写，提供更好的支持环境（如：WEB 、Native 等）*
 
 
 
@@ -104,7 +96,7 @@ class ReactNativeClass extends Component {
 
 创建一个类（组件），继承 **Component** 。
 
-**render** 方法就是用于渲染视图，**return** 后面的代码就是 **JSX** 语法。
+**render** 方法就是用于渲染视图，**return** 后面的代码就是 [JSX](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html) 语法。
 
 
 
@@ -144,4 +136,15 @@ AppRegistry.registerComponent('ReactNativeClass', () => ReactNativeClass);
 **AppRegistry** 是 **JS** 运行 **ReactNative** 程序的入口，**APP** 的根组件通过 ```AppReistry.registerComponent``` 来注册应用，然后原生系统通过调用 ```AppRegistry.runApplication``` 来加载 **bundle**，最后把应用运行起来。
 
 **AppResgistry** 文件位于：```/node_modules/react-native/Libraries/AppRegistry/AppRegistry.js```
+
+
+
+
+
+##### 参考资料
+
+- [https://github.com/facebook/react-native/releases/tag/v0.25.1](https://github.com/facebook/react-native/releases/tag/v0.25.1)
+- [https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+- [深入理解 JSX](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+
 

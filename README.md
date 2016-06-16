@@ -1,12 +1,12 @@
 # ReactNativeClass
 
-###  **React Native** 入门篇
+###  **React Native** 入门篇
 
 - 「React Native 入门」之环境搭建
   - Mac
   - Windows
-- [「React Native 入门」之项目结构](./ReactNative入门之项目结构.md)
-- 「React Native 入门」之布局练习
+- [「React Native 入门」之项目目录](./ReactNative入门之项目目录.md)
+- 「React Native 入门」之样式与布局
 
 
 

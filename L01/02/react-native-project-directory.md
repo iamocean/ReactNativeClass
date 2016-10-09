@@ -6,22 +6,22 @@
 
 ## 初始化新项目
 
-首先，我们来初始化一个新项目 **ReactNativeClass**
+首先，我们来初始化一个新项目 **ReactNativeDemo**
 
-`react-native init ReactNativeClass`
+`react-native init ReactNativeDemo`
 
 大概需要等待 **5 ~ 10** 分钟后显示如下图
 
-![01](img/01.png)
+![01](img/01.jpg)
 
 
 
 ## 项目目录
 
-进入 `ReactNativeClass` 文件夹，然后通过 `tree` 命令来查看当前项目的目录结构，如下:
+进入 `ReactNativeDemo` 文件夹，然后通过 `tree` 命令来查看当前项目的目录结构，如下:
 
 ```javascript
-~/Dropbox/Study/react-native/ReactNativeClass   
+~/Dropbox/Study/react-native/ReactNativeDemo   
 ❯ tree -L 1
 .
 ├── android
@@ -52,7 +52,7 @@
 
 #### 引入与声明
 
-```
+```javascript
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -74,8 +74,8 @@ import {
 
 #### 创建组件
 
-```
-class ReactNativeClass extends Component {
+```javascript
+class ReactNativeDemo extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -83,10 +83,11 @@ class ReactNativeClass extends Component {
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js
+          To get started, edit index.ios.js
         </Text>
         <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
+          Press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
         </Text>
       </View>
     );
@@ -102,7 +103,7 @@ class ReactNativeClass extends Component {
 
 #### 定义样式
 
-```
+```javascript
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -130,7 +131,7 @@ const styles = StyleSheet.create({
 #### 注册应用入口
 
 ```
-AppRegistry.registerComponent('ReactNativeClass', () => ReactNativeClass);
+AppRegistry.registerComponent('ReactNativeDemo', () => ReactNativeDemo);
 ```
 
 **AppRegistry** 是 **JS** 运行 **ReactNative** 程序的入口，**APP** 的根组件通过 ```AppReistry.registerComponent``` 来注册应用，然后原生系统通过调用 ```AppRegistry.runApplication``` 来加载 **bundle**，最后把应用运行起来。

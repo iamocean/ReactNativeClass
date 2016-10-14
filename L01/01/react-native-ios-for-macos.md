@@ -4,7 +4,7 @@
 
 
 
-## 环境准备
+## 准备工作
 
 1. **Node.js** 需要在 4.0 或更高以上的版本
 2. **Xcode** 需要在 7.0 或更高以上的版本
@@ -102,7 +102,7 @@ react-native init ReactNativeDemo
 
 然后按下快捷键 `command+R` 刷新页面，预览效果如下图
 
-![04](img/04.jpg)
+![04](img/ios/04.jpg)
 
 ### 4.开发者工具
 

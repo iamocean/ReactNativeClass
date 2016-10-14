@@ -1,6 +1,8 @@
 # 「React Native 入门」之在 macOS 上搭建Android 运行环境
 
-前面一篇是说在 **macOS** 上搭建 **iOS** 运行环境，那么这篇就来说下在 **macOS** 上如何搭建 **Android** 运行环境。
+前面一篇是说[在 **macOS** 上搭建 **iOS** 运行环境](./react-native-android-for-macos.md)，那么这篇就来说下在 **macOS** 上如何搭建 **Android** 运行环境。
+
+这里不再过多讲述 `Node.js 、React Native` 等工具如何安装了，不懂的可以参考下前面一篇文章[（传送门）](./react-native-android-for-macos.md)，下面我们直接进入正题。
 
 
 
@@ -14,7 +16,7 @@
 
 ## 安装 Android SDK 
 
-这里推荐使用 **Homebrew** 来安装管理，升级、删除都非常方便，另外在前面一篇已有提过了，这里不再多说了。
+这里推荐使用 **Homebrew** 来安装管理，升级、删除都非常方便，另外在[前面一篇](./react-native-android-for-macos.md)已有提过了，这里不再多说了。
 
 ![01](img/android/01.jpg)
 
@@ -64,7 +66,7 @@ react-native run-android
 
 
 
-辛苦你看到这里，恭喜你环境就已成功搭建完成了。
+当你看到这里时，那么恭喜你环境已成功搭建完毕了。
 
 Have a nice day!
 

@@ -21,6 +21,7 @@
 ### L04-React Native 其他篇
 
 * [React Native 之 style 属性](./L04/01/react-native-document.md)
+* [React Native 之修改 APP 应用名称](./L04/02/react-native-app-display-name.md)
 
 
 

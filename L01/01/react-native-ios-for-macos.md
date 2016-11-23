@@ -13,9 +13,13 @@
 
 另外在这里我还安装了 **Homebrew** ，方便于安装其他软件。
 
-**Homebrew** 的安装方式，详见[官网](http://brew.sh/)。
+## 安装 Homebrew
 
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
+关于 **Homebrew** 的更多介绍，详见[官网](http://brew.sh/)。
 
 ## 安装 Node.js
 
